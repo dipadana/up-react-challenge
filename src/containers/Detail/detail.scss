@@ -1,0 +1,148 @@
+$font-color: #57a99a;
+$ingredients-color: #3d3c3c;
+
+.text-white{
+  color: white;
+  text-decoration: none;
+}
+
+.web-title{
+  color: $font-color;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.img-container{
+  width: 100%;
+  background-color: gray;
+
+  img{
+    width: 100%;
+    display:block;
+    margin:auto;
+  }
+}
+
+.detail-title{
+  font-size: 60px;
+  margin-top: 0px;
+  font-weight: bolder;
+  color: $font-color;
+
+  @media screen and (max-width: 1242px) {
+    font-size: 55px;
+  }
+
+  @media screen and (max-width: 1055px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 991px) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 414px) {
+    font-size: 30px;
+  }
+
+}
+
+.receipe-container{
+
+  margin-top: 35px;
+
+  &--ingredient-title{
+    font-size: 25px;
+    color: $font-color;
+    font-weight: bolder;
+  }
+
+  ul{
+    line-height: 1.6;
+    color: $ingredients-color;
+  }
+}
+
+.menu-bar{
+  font-size: 30px;
+  color: $font-color;
+  cursor: pointer;
+  
+  &--container--detail{
+    position: fixed;
+    top: 0;
+  }
+}
+
+.badge-container{
+
+  display: flex;
+  margin-top: 40px;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 25px;
+  }
+
+  &--badge-items{
+    background-color: $font-color;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+
+  &--badge-items-f{
+    background-color: #3578E5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+}
+
+.nav-child{
+  margin-top: 30px;
+  width: 100%;
+  background-color: #d1eecc;
+  
+  @media screen and (max-width: 437px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 364px) {
+    font-size: 13px;
+  }
+
+  &--create-menu{
+    text-align: center;
+    color: $ingredients-color;
+    cursor: pointer;
+    border-right: 1px solid #ecf4f3;
+    text-decoration: none;
+
+    &:hover{
+      background-color: #ecf4f3;
+    }
+  }
+
+  &--nutrition-information{
+    text-align: center;
+    color: $ingredients-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+      background-color: #ecf4f3;
+    }
+  }
+}

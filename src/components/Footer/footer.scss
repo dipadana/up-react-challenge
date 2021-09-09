@@ -1,0 +1,12 @@
+$font-color: #57a99a;
+
+.footer-title{
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  color: $font-color;
+
+  &--sub{
+    font-size: 12px;
+  }
+}
